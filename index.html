@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Music Player</title>
+    <link rel="icon" href="/assets/music-icon.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <div class="one">
+            <img src="assets/logo.png" alt="">
+        </div>
+        <div class="two ">
+            <img src="assets/home.png" alt="home" class="home-icon">
+            <input type="text" name="text" id="text" placeholder="What do you want to play?">
+        </div>
+        <div class="three">
+            <p class="username">R</p>
+        </div>
+    </header>
+    <main>
+        <div class="main-left">
+            <div class="left-one">
+                <span>Your Library</span>
+                <div>
+                    <button class="create-button">+ Create</button>
+                    <img src="assets/fullscreen.png" alt="">
+                </div>
+            </div>
+            <div class="left-two">
+                <span>Playlists</span>
+                <span>Artists</span>
+                <span>Albums</span>
+            </div>
+            <div class="left-three">
+                <i class="fas fa-search"></i>
+                <span>Recents <i class="fas fa-bars"></i></span>
+            </div>
+            <div class="left-four">
+                <div class="playlists">
+                    <img src="songs/romantic/cover.png" alt="">
+                    <p>Romantic Songs</p>
+                </div>
+                <div class="playlists">
+                    <img src="songs/old_is_gold/cover.png" alt="">
+                    <p>Old Is Gold</p>
+                </div>
+                <div class="playlists">
+                    <img src="songs/english/cover.png" alt="">
+                    <p>English Songs</p>
+                </div>
+                <div class="playlists">
+                    <img src="songs/rap/cover.png" alt="">
+                    <p>Rap Songs</p>
+                </div>
+            </div>
+        </div>
+        <div class="main-right">
+            <div id="playlist-name">Playlist Name</div>
+            <div id="song-container">
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="img-group">
+            <img src="assets/prev.png" alt="previous" id="previous">
+            <img src="assets/play.png" alt="play" id ="play">
+            <img src="assets/pause.png" alt="pause" id="pause" style="display: none;">
+            <img src="assets/next.png" alt="next" id="next">
+            <div class="volume-container">
+                <img src="assets/medium_volume.png" alt="volume" id="volume-icon">
+                <input type="range" name="audio-bar" id="audio-bar" min="0" max="100" value="75">
+            </div>
+        </div>
+        <div class="progress-bar">
+            <p id="real-time">0:00</p>
+            <input type="range" name="range" id="song-progress-bar" min=0 max="100" value="0">
+            <p id="total-time">0:00</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<!-- oo meri ja oo meri jaa mere ko majnu bna gyi -->

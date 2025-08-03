@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-color: #1d1d1d; */
+    background-color: black;
+    color: snow;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px 10px;
+}
+
+header img {
+    filter: invert(1);
+    width: 38px;
+    margin: 16px;
+}
+
+.home-icon
+{
+    background-color: #e0e0e0;
+    padding: 13px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.two {
+    display: flex;
+    align-items: center;
+}
+
+input[type='text'] {
+    width: 500px;
+    height: 55px;
+    border-radius: 50px;
+    border: none;
+    padding: 0px 20px;
+    background-color: #1f1f1f;
+    font-size: 1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.username
+{
+    background-color: #ff6738;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    border: 8px solid #1f1f1f;
+    color: black;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* main content here */
+main
+{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+}
+
+/* main left */
+.main-left
+{
+    box-sizing: border-box;
+    width: 30vw;
+    height: 100%;
+    border-radius: 10px;
+    margin: 0px 10px;
+    background-color: #181818;
+    padding: 10px;
+    overflow: hidden auto;
+}
+.create-button
+{
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    color: snow;
+    background-color: #1f1f1f;
+    font-family:'Segoe UI', Tahoma, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+
+}
+.left-one
+{
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.left-one img{
+    height: 20px;
+    filter: invert(1);
+}
+.left-one div
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.left-two
+{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.left-two span
+{
+    background-color: #292929;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin: 5px;
+    font-weight: bold
+    ;
+}
+.left-three
+{
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.left-three span
+{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.playlists
+{
+    height: 60px;
+    margin-left: 20px;
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.playlists img{
+    height: 100%;   
+    border-radius: 5px;
+}
+.playlists:hover
+{
+    background-color: #1f1f1f;
+    cursor: pointer;
+}
+
+/* main-right */
+.main-right
+{
+    box-sizing: border-box;
+    width: 68vw;
+    height: 80vh;
+    border-radius: 10px;
+    background-color: #181818;
+    padding: 20px;
+    overflow: hidden auto;
+}
+#playlist-name
+{
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.song
+{
+    height: 60px;
+    margin-left: 20px;
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.song img{
+    height: 100%;
+    border-radius: 5px;
+}
+.song:hover
+{
+    background-color: #1f1f1f;
+
+}
+.play,.pause
+{
+    position: absolute;
+    left: 30px;
+}
+.pause{
+    visibility: hidden;
+}
+
+
+
+/* footer */
+footer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.volume-container
+{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    right: 500px;
+}
+.img-group
+{
+    margin: 10px;
+    display: flex;
+    gap: 20px;
+}
+.img-group img{
+    filter: invert(1);
+    width: 25px;
+}
+.progress-bar
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: red; */
+}
+input[type = 'range']
+{
+    width: 90%;
+}
